@@ -1,18 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/map.css">
-    <title>Document</title>
-</head>
-<body>
-    <div class="map">
-        <img src="./img/1.jpg" alt="img">
-        <a href="#" class="point point1" title="Купить билет в Москву"></a>
-        <a href="#" class="point point2" title="Купить билет в Анкару"></a>
-        <a href="#" class="point point3" title="Купить билет в Мадрид"></a>
-    </div>
-</body>
-</html>
+main {
+    margin: 1rem 0 0 0;
+
+    h1 {
+        text-align: center;
+        margin: 1rem 0 3rem 0;
+    }
+
+    article {  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        
+        .card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            max-width: 500px;
+            padding: 1rem;
+            text-align: center;
+            
+            &__img {
+                width: 200px;
+                height: 100px;
+                border: 1px solid white;
+                margin: 1rem;
+                background: $bcc-end;
+                background: linear-gradient(to bottom right, $bcc-end,  $bcc); 
+            }
+
+            &__title {
+                font-size: 1.5rem;
+                margin: 0 0 0.5rem 0;
+            }
+        }
+    }
+}
