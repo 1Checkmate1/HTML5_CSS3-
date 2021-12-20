@@ -1,18 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/map.css">
-    <title>Document</title>
-</head>
-<body>
-    <div class="map">
-        <img src="./img/1.jpg" alt="img">
-        <a href="#" class="point point1" title="Купить билет в Москву"></a>
-        <a href="#" class="point point2" title="Купить билет в Анкару"></a>
-        <a href="#" class="point point3" title="Купить билет в Мадрид"></a>
-    </div>
-</body>
-</html>
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        width: 50px;
+        height: 50px;
+        background-color: $bcc-end;
+        border-radius: 50%;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    ul {
+        display: flex;
+        gap: 3rem;
+        list-style: none;
+    }
+
+    button {
+        border: 0;
+        padding: 1rem;
+        border-radius: 0 1rem 0 0.5rem;
+        width: 100px;
+        background-color: $bcc;
+        font-weight: bold;
+        letter-spacing: 5px;
+    }
+}
+
+@media (max-width: 430px) {
+    button {
+        display: none;
+    }
+} 
