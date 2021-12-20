@@ -1,0 +1,49 @@
+.map{
+    position: relative;
+}
+.map img{
+    width: 70%;
+    height: auto;
+}
+.point{
+    width: 10px;
+    height: 10px;
+    background-color: rgb(255, 0, 51);
+    border-radius: 50%;
+    position: absolute;
+    transition: 0.3;
+
+    animation-name: point;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.point:hover{
+    animation-play-state: paused;
+}
+.point1{
+    left: 60%;
+    top: 40%;
+}
+.point2{
+    left: 55%;
+    top: 90%;
+}
+.point3{
+    left: 24%;
+    top: 87%;
+}
+
+@keyframes point{
+    0%{
+        width: 10px;
+        height: 10px;
+        opacity: 1;
+    }
+    100%{
+        width: 20px;
+        height: 20px;
+        opacity: 0.5;
+    }
+}
