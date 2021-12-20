@@ -1,18 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/map.css">
-    <title>Document</title>
-</head>
-<body>
-    <div class="map">
-        <img src="./img/1.jpg" alt="img">
-        <a href="#" class="point point1" title="Купить билет в Москву"></a>
-        <a href="#" class="point point2" title="Купить билет в Анкару"></a>
-        <a href="#" class="point point3" title="Купить билет в Мадрид"></a>
-    </div>
-</body>
-</html>
+{
+  "name": "lesson-6",
+  "version": "1.0.0",
+  "description": "sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
+  },
+  "author": "Aidar",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "rimraf": "^3.0.2",
+    "sass": "^1.45.0"
+  }
+}
