@@ -1,0 +1,50 @@
+/*////////////////////////Form section/////////////////////*/
+.container {
+    max-width: $size-width*12+px;
+    margin: auto;
+    padding: $zero-size $size-main*2;
+}
+
+.form-section {
+    padding: $size-main*3 $zero-size;
+    background-color: darken($color-grey, 18);
+
+    form {
+        grid-template-columns: repeat(5,1fr);
+        grid-gap: $size-main*1.5;
+        padding: {
+            left: $size-main*2;
+            right: $size-main*2;
+        }
+    }
+
+    input {
+        border: none;
+        padding: $size-main*1.5 $size-main;
+        width: $size-width/6*5 + %;
+        height: $size-main*2;
+        font-family: $font-family-secondary;
+        font-style: italic;
+        font-weight: bold;
+        outline: none;
+        background-color: lighten($color-grey, 8);
+        transition: background-color 0.6s ease;
+        color: $color-dark;
+
+        &::-webkit-input-placeholder {
+            color: darken($color-grey, 12);
+            opacity:0.5
+        }
+
+        &:focus {
+            background-color: lighten($color-grey, 46);
+        }
+    }
+
+    .button {
+        font-size: $size-main*1.7;
+        padding: $size-main*1.45;
+        width: $size-width+%;
+        margin-top: $zero-size;
+    }
+}

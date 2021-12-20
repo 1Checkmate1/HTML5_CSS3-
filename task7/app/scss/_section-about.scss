@@ -1,0 +1,40 @@
+/*///////////////////////////////Section-about/////////////////////*/
+.section-ready {
+    background-color: lighten($color-grey, 46);
+
+    .container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.ready-left {
+    border-right: $size-main/10 solid $color-grey;
+    font-size: $size-main+8px;
+    font-family: $font-family-main;
+
+    padding: {
+        top: $size-main*6;
+        left: $size-main*6;
+        right: $size-main*6;
+        bottom:$size-main;
+    }
+    h2 {
+        margin:{
+            top:$zero-size;
+            bottom:$size-main*4;
+        }
+    }
+}
+.img-responsive {
+    display:block;
+    max-width:$size-width+%;
+    height:auto;
+}
+.ready-right {
+    padding:{
+        left:$size-main*4;
+        top:$size-main*5;
+        right:$size-main*3;
+         bottom:$size-main;
+    }
+}
